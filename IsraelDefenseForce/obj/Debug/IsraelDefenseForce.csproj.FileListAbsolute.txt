@@ -1,0 +1,7 @@
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\bin\Debug\IsraelDefenseForce.exe.config
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\bin\Debug\IsraelDefenseForce.exe
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\bin\Debug\IsraelDefenseForce.pdb
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.csproj.AssemblyReference.cache
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.csproj.CoreCompileInputs.cache
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.exe
+C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.pdb
