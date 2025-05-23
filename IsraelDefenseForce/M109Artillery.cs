@@ -8,9 +8,12 @@ namespace IsraelDefenseForce
 {
     internal class M109Artillery : StrikeUnit
     {
-        public new string UnicName = "M109";
-        public new int StrikLeft = 40;
-        public new int FuelSupply;
-        public new string TypeOfTarget = "open areas";
+        public string BombTypes;
+
+        public M109Artillery(string unicName = "M109", int strikLeft = 40, int fuelSupply = 20, string typeOfTarget = "open areas", string bombTypes = "explosive shells")
+                : base(unicName, strikLeft, fuelSupply, typeOfTarget)
+        {
+            this.BombTypes = bombTypes;
+        }
     }
 }

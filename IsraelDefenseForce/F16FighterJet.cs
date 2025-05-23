@@ -8,10 +8,13 @@ namespace IsraelDefenseForce
 {
     internal class F16FighterJet : StrikeUnit
     {
-        public new string UnicName = "F16";
-        public new int StrikLeft = 8;
-        public new int FuelSupply;
-        public new string TypeOfTarget = "buildings";
+        public string BombTypes;
+       
+        public F16FighterJet( string unicName = "F16", int strikLeft = 8, int fuelSupply = 0, string typeOfTarget = "buildings", string bombTypes = " 0.5 ton or 1 ton")
+                : base(unicName, strikLeft, fuelSupply, typeOfTarget)
+        {
+            this.BombTypes = bombTypes;
 
+        }
     }
 }

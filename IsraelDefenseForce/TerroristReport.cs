@@ -10,9 +10,9 @@ namespace IsraelDefenseForce
     {
         public Terrorist TerroristInformition;
         public string LastKnownLocation;
-        public string TimeStamp;
+        public DateTime  TimeStamp;
 
-        public TerroristReport(Terrorist terroristInformition, string lastKnownLocation, string timeStamp)
+        public TerroristReport(Terrorist terroristInformition, string lastKnownLocation, DateTime timeStamp)
         {
             this.TerroristInformition = terroristInformition;
             this.LastKnownLocation = lastKnownLocation;

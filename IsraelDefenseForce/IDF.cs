@@ -6,19 +6,35 @@ using System.Threading.Tasks;
 
 namespace IsraelDefenseForce
 {
-    internal  class IDF 
+    internal static class IDF 
     {
         private static string DateOfEstablishment = "26/05/1948"; 
         
-        public static string CurrentCommander;
+        public static string CurrentCommander = "Eyal Zamir";
 
         public static List<StrikeUnit> ListOfStrikUnits;
         public static string GetDateOfEstablishment()
         {
             return DateOfEstablishment;
         }
+        public static void getlistofunitswithstrikleft()
+        {
+            foreach (StrikeUnit namestrik in IDF.ListOfStrikUnits)
+            {
+                if (namestrik.StrikLeft > 0)
+                {
+                    Console.WriteLine($"{namestrik.UnicName}  ,{namestrik.StrikLeft}");
+                }
 
+                
+            }
+            
+
+        }
 
         
-    }
+
+
+
+}
 }

@@ -10,9 +10,9 @@ namespace IsraelDefenseForce
     {
         private static string DateOfEstablishment = "1987";
 
-        public static string CurrentCommander;
+        public static string CurrentCommander = "Mohammed Sinwar";
 
-        public static List<Terrorist> ListOfTerrorist;
+        public static List<Terrorist> ListOfTerrorist = new List<Terrorist>() { };
 
         public static string GetDateOfEstablishment()
         {

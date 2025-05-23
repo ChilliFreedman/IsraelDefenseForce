@@ -8,9 +8,11 @@ namespace IsraelDefenseForce
 {
     internal class Hermes460Drone : StrikeUnit
     {
-        public new string UnicName = "Hermes460";
-        public new int StrikLeft = 3;
-        public new int FuelSupply;
-        public new string TypeOfTarget = " people, vehicles";
+        
+        public Hermes460Drone(string unicName = "Hermes460", int strikLeft = 3, int fuelSupply = 0, string typeOfTarget  = "people, vehicles", string bombTypes = " personnel or armored vehicles")
+            : base(unicName, strikLeft, fuelSupply, typeOfTarget)
+        {
+            
+        }
     }
 }

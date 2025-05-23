@@ -13,6 +13,13 @@ namespace IsraelDefenseForce
         public int FuelSupply;
         public string TypeOfTarget;
 
+        public StrikeUnit(string unicName, int strikLeft, int fuelSupply, string typeOfTarget)
+        {
+            this.UnicName = unicName;
+            this.StrikLeft = strikLeft;
+            this.FuelSupply = fuelSupply;
+            this.TypeOfTarget = typeOfTarget;
+        }
 
     }
 }
