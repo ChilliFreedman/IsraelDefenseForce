@@ -10,20 +10,20 @@ namespace IsraelDefenseForce
     internal static class IntelligenceUnit
     {
         public static List<TerroristReport> ListReports;
-        public static string GetTheterWithMostReports(List<TerroristReport> listReports)
+        public static string GetTheTerroristWithMostReports()
         {
             Dictionary<Terrorist,int> counts = new Dictionary<Terrorist,int>();
 
             
-            foreach (TerroristReport report in listReports)
+            foreach (TerroristReport report in ListReports)
             {
-                if (!counts.ContainsKey(report.TerroristInformition))
+                if (!counts.ContainsKey(report.TerroristInformation))
                 {
-                    counts[report.TerroristInformition] = 1;
+                    counts[report.TerroristInformation] = 1;
                 }
                 else
                 {
-                    counts[report.TerroristInformition]++;
+                    counts[report.TerroristInformation]++;
                 }
             }
             var max = counts.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;
