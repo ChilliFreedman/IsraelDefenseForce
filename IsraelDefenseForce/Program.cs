@@ -26,11 +26,11 @@ namespace IsraelDefenseForce
             Hamas.ListOfTerrorist.Add(Ahmed);
 
             Dictionary<string, int> dicAli = new Dictionary<string, int>() { { "gun", 3 } };
-            Terrorist Ali = new Terrorist("Ali", 3, true, dicAli);
+            Terrorist Ali = new Terrorist("Ali", 4, true, dicAli);
             Hamas.ListOfTerrorist.Add(Ali);
 
             Dictionary<string, int> dicOmar = new Dictionary<string, int>() { { "m16", 1 } };
-            Terrorist Omar = new Terrorist("Omar", 3, true, dicOmar);
+            Terrorist Omar = new Terrorist("Omar", 5, true, dicOmar);
             Hamas.ListOfTerrorist.Add(Omar);
 
             Dictionary<string, int> dicYousef = new Dictionary<string, int>() { { "ak47", 2 }, { "m16", 1 } };
@@ -43,7 +43,6 @@ namespace IsraelDefenseForce
             IDF.ListOfStrikUnits  = new List<StrikeUnit> { f16, m109, zic };
 
             Console.WriteLine(IDF.ListOfStrikUnits.Count);
-            Console.WriteLine(Mohammed.Rank);
             Console.WriteLine(Hamas.ListOfTerrorist.Count);
             Console.WriteLine(Hamas.CurrentCommander);
 
@@ -66,11 +65,48 @@ namespace IsraelDefenseForce
                 Console.WriteLine(report.TerroristInformition.Name);
             }
             //קורא לפונקציה שבודקת איזה מחבל יש הכי הרבה פעמים
-            Console.WriteLine( IntelligenceUnit.GetTheterWithMostReports(IntelligenceUnit.ListReports));
+            Console.WriteLine( IntelligenceUnit.GetTheterWithMostReports().Name);
             //קורא לפונקציה של
             //הצגת כלי תקיפה זמינים ואת שארית התחמושת שלהם
             IDF.getlistofunitswithstrikleft();
             Console.WriteLine(f16.StrikLeft);
+            //קבלת הטרוריסט הכי מסוכן
+            Terrorist hiest =  QualityScore.voQualityScore();
+            Console.WriteLine(hiest.Name);
+            //קבלת הטרוריסט עם הדרגה הכי גבוהה
+            Terrorist hiranke = QualityScore.gethiranke();
+            Console.WriteLine(hiranke.Name);
+            
+            string funn(Terrorist aaaa)
+            {
+                string ritewepons = "";
+                foreach (string a in aaaa.Weapons.Keys)
+                {
+
+                    ritewepons += $"{aaaa.Weapons[a]} {a} ";
+                }
+                return ritewepons;
+
+
+            }
+
+            //Console.WriteLine(Mohammed.getscure());
+            //Console.WriteLine(QualityScore.voQualityScore().Name);
+            //Console.WriteLine(QualityScore.voQualityScore().Rank);
+            //Console.WriteLine(QualityScore.voQualityScore().getscure());
+            
+
+            Console.WriteLine(funn(QualityScore.voQualityScore()));
+            //foreach(TerroristReport a in IntelligenceUnit.ListReports)
+            //{
+            //    if (a.TerroristInformition == QualityScore.voQualityScore())
+            //    {
+            //        Console.WriteLine(a.LastKnownLocation);
+            //    }
+            //}
+
+            //Console.WriteLine(Mohammed.Weapons.Keys);
+
             //foreach(StrikeUnit s in IDF.ListOfStrikUnits)
             //{
             //    Console.WriteLine(s.UnicName);
