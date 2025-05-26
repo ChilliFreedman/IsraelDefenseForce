@@ -8,15 +8,15 @@ namespace IsraelDefenseForce
 {
     internal abstract class StrikeUnit
     {
-        public string UnicName;
-        public int StrikLeft;
+        public string UniqueName;
+        public int StrikesLeft;
         public int FuelSupply;
         public string TypeOfTarget;
 
-        public StrikeUnit(string unicName, int strikLeft, int fuelSupply, string typeOfTarget)
+        public StrikeUnit(string uniqueName, int strikesLeft, int fuelSupply, string typeOfTarget)
         {
-            this.UnicName = unicName;
-            this.StrikLeft = strikLeft;
+            this.UniqueName = uniqueName;
+            this.StrikesLeft = strikesLeft;
             this.FuelSupply = fuelSupply;
             this.TypeOfTarget = typeOfTarget;
         }

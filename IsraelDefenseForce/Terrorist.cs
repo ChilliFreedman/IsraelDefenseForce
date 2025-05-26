@@ -14,12 +14,12 @@ namespace IsraelDefenseForce
         public Dictionary<string,int> Weapons;
 
         
-        public Terrorist(string name,int rank, bool isAlive, Dictionary<string, int> wepons)
+        public Terrorist(string name,int rank, bool isAlive, Dictionary<string, int> weapons)
         {
             this.Name = name;
             this.Rank = rank;
             this.IsAlive = isAlive;
-            this.Weapons = wepons;
+            this.Weapons = weapons;
         }
        
 
