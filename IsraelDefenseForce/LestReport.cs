@@ -14,7 +14,7 @@ namespace IsraelDefenseForce
             
             foreach (TerroristReport terrorist in IntelligenceUnit.ListReports)
             {
-                if (terrorist.TerroristInformition == terroristtokell)
+                if (terrorist.TerroristInformation == terroristtokell)
                 {
                     if (lestrepurt == null)
                     {
