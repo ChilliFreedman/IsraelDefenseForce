@@ -5,3 +5,10 @@ C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForc
 C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.csproj.CoreCompileInputs.cache
 C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.exe
 C:\Users\חילי פרידמן\source\repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.pdb
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\bin\Debug\IsraelDefenseForce.exe.config
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\bin\Debug\IsraelDefenseForce.exe
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\bin\Debug\IsraelDefenseForce.pdb
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.csproj.AssemblyReference.cache
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.csproj.CoreCompileInputs.cache
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.exe
+C:\Users\Yisroel Meir\Source\Repos\IsraelDefenseForce\IsraelDefenseForce\obj\Debug\IsraelDefenseForce.pdb

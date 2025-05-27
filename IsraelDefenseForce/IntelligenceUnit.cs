@@ -19,13 +19,13 @@ namespace IsraelDefenseForce
             
             foreach (TerroristReport report in ListReports)
             {
-                if (!counts.ContainsKey(report.TerroristInformition))
+                if (!counts.ContainsKey(report.TerroristInformation))
                 {
-                    counts[report.TerroristInformition] = 1;
+                    counts[report.TerroristInformation] = 1;
                 }
                 else
                 {
-                    counts[report.TerroristInformition]++;
+                    counts[report.TerroristInformation]++;
                 }
             }
             Terrorist max = counts.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;

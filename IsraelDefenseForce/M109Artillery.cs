@@ -12,6 +12,7 @@ namespace IsraelDefenseForce
 
         public M109Artillery(string unicName = "M109", int strikLeft = 40, int fuelSupply = 20, string typeOfTarget = "outside", string bombTypes = "explosive shells")
                 : base(unicName, strikLeft, fuelSupply, typeOfTarget)
+
         {
             this.BombTypes = bombTypes;
         }

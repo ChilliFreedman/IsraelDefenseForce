@@ -17,13 +17,13 @@ namespace IsraelDefenseForce
         {
             return DateOfEstablishment;
         }
-        public static void getlistofunitswithstrikleft()
+        public static void GetListOfUnitsWithStrikesLeft()
         {
-            foreach (StrikeUnit namestrik in IDF.ListOfStrikUnits)
+            foreach (StrikeUnit strike in ListOfStrikUnits)
             {
-                if (namestrik.StrikLeft > 0)
+                if (strike.StrikesLeft > 0)
                 {
-                    Console.WriteLine($"{namestrik.UnicName}  ,{namestrik.StrikLeft}");
+                    Console.WriteLine($"{strike.UniqueName}  ,{strike.StrikesLeft}");
                 }
 
                 

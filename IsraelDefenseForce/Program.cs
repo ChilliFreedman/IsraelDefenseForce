@@ -18,7 +18,7 @@ namespace IsraelDefenseForce
             //List<string> TerorisNames = new List<string>() { "Mohammed", "Ahmed", "Ali", "Omar", "Yousef", "Amina", "Fatima", "Noor", "Salim", "Layla" };
 
             Dictionary<string, int> dicMohammed = new Dictionary<string, int>() { { "gun", 2 }, { "knife", 2 } };
-            Terrorist Mohammed = new Terrorist("Mohammed", 3, true,dicMohammed);
+            Terrorist Mohammed = new Terrorist("Mohammed", 3, true, dicMohammed);
             Hamas.ListOfTerrorist.Add(Mohammed);
 
             Dictionary<string, int> dicAhmed = new Dictionary<string, int>() { { "ak47", 1 }};
@@ -60,10 +60,13 @@ namespace IsraelDefenseForce
             //הכנסה לרשימה של אמן
             IntelligenceUnit.ListReports = new List<TerroristReport>()
             { report1,report2,report3,report4,report5,report6,report7,report8,report9,report10};
+
             //foreach (TerroristReport report in IntelligenceUnit.ListReports)
             //{
             //    Console.WriteLine(report.TerroristInformition.Name);
             //}
+
+
             //קורא לפונקציה שבודקת איזה מחבל יש הכי הרבה פעמים
             //Console.WriteLine( IntelligenceUnit.GetTheterWithMostReports().Name);
             //קורא לפונקציה של

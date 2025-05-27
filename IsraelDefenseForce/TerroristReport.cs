@@ -8,13 +8,13 @@ namespace IsraelDefenseForce
 {
     internal class TerroristReport
     {
-        public Terrorist TerroristInformition;
+        public Terrorist TerroristInformation;
         public string LastKnownLocation;
-        public DateTime  TimeStamp;
+        public DateTime TimeStamp;
 
-        public TerroristReport(Terrorist terroristInformition, string lastKnownLocation, DateTime timeStamp)
+        public TerroristReport(Terrorist terroristInformation, string lastKnownLocation, DateTime timeStamp)
         {
-            this.TerroristInformition = terroristInformition;
+            this.TerroristInformation = terroristInformation;
             this.LastKnownLocation = lastKnownLocation;
             this.TimeStamp = timeStamp;
         }
