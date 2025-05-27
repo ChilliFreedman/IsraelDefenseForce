@@ -42,9 +42,9 @@ namespace IsraelDefenseForce
             Hermes460Drone zic = new Hermes460Drone();
             IDF.ListOfStrikUnits  = new List<StrikeUnit> { f16, m109, zic };
 
-            Console.WriteLine(IDF.ListOfStrikUnits.Count);
-            Console.WriteLine(Hamas.ListOfTerrorist.Count);
-            Console.WriteLine(Hamas.CurrentCommander);
+            //Console.WriteLine(IDF.ListOfStrikUnits.Count);
+            //Console.WriteLine(Hamas.ListOfTerrorist.Count);
+            //Console.WriteLine(Hamas.CurrentCommander);
 
             //יצירת דיווחים של אמן
             TerroristReport report1 = new TerroristReport(Mohammed, "home", DateTime.Now);
@@ -60,43 +60,73 @@ namespace IsraelDefenseForce
             //הכנסה לרשימה של אמן
             IntelligenceUnit.ListReports = new List<TerroristReport>()
             { report1,report2,report3,report4,report5,report6,report7,report8,report9,report10};
-            foreach (TerroristReport report in IntelligenceUnit.ListReports)
-            {
-                Console.WriteLine(report.TerroristInformation.Name);
-            }
+
+            //foreach (TerroristReport report in IntelligenceUnit.ListReports)
+            //{
+            //    Console.WriteLine(report.TerroristInformition.Name);
+            //}
+
+
             //קורא לפונקציה שבודקת איזה מחבל יש הכי הרבה פעמים
-            Console.WriteLine( IntelligenceUnit.GetTheterWithMostReports().Name);
+            //Console.WriteLine( IntelligenceUnit.GetTheterWithMostReports().Name);
             //קורא לפונקציה של
             //הצגת כלי תקיפה זמינים ואת שארית התחמושת שלהם
-            IDF.getlistofunitswithstrikleft();
-            Console.WriteLine(f16.StrikLeft);
+            //IDF.getlistofunitswithstrikleft();
+            //Console.WriteLine(f16.StrikLeft);
             //קבלת הטרוריסט הכי מסוכן
             Terrorist hiest =  QualityScore.voQualityScore();
-            Console.WriteLine(hiest.Name);
+            //Console.WriteLine(hiest.Name);
             //קבלת הטרוריסט עם הדרגה הכי גבוהה
             Terrorist hiranke = QualityScore.gethiranke();
-            Console.WriteLine(hiranke.Name);
-            
-            string funn(Terrorist aaaa)
-            {
-                string ritewepons = "";
-                foreach (string a in aaaa.Weapons.Keys)
-                {
+            //Console.WriteLine(hiranke.Name);
 
-                    ritewepons += $"{aaaa.Weapons[a]} {a} ";
-                }
-                return ritewepons;
+            //קריאה סופית לתקיפה 
+            Attack.attack(hiest,2);
+            Attack.attack(hiranke, 2);
+
+            //string funn(Terrorist aaaa)
+            //{
+            //    string ritewepons = "";
+            //    foreach (string a in aaaa.Weapons.Keys)
+            //    {
+
+            //        ritewepons += $"{aaaa.Weapons[a]} {a} ";
+            //    }
+            //    return ritewepons;
 
 
-            }
+            //}
+
+            //TerroristReport tokill = null;
+            ////TerroristReport tokill = IntelligenceUnit.ListReports[0];
+            //foreach(TerroristReport terrorist in IntelligenceUnit.ListReports)
+            //{
+            //    if (terrorist.TerroristInformition == hiest)
+            //    {
+            //        if (tokill == null)
+            //        {
+            //            tokill = terrorist;
+            //        }
+            //        else
+            //        {
+            //            if (terrorist.TimeStamp > tokill.TimeStamp)
+            //            {
+            //                tokill = terrorist;
+            //            }
+            //        }
+            //    }
+            //}
+            //Console.WriteLine(tokill.TerroristInformition.Name +  " " + tokill.LastKnownLocation + " " + tokill.TimeStamp);
+
+
 
             //Console.WriteLine(Mohammed.getscure());
             //Console.WriteLine(QualityScore.voQualityScore().Name);
             //Console.WriteLine(QualityScore.voQualityScore().Rank);
             //Console.WriteLine(QualityScore.voQualityScore().getscure());
-            
 
-            Console.WriteLine(funn(QualityScore.voQualityScore()));
+
+            //Console.WriteLine(funn(QualityScore.voQualityScore()));
             //foreach(TerroristReport a in IntelligenceUnit.ListReports)
             //{
             //    if (a.TerroristInformition == QualityScore.voQualityScore())
