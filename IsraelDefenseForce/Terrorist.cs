@@ -22,7 +22,7 @@ namespace IsraelDefenseForce
             this.Name = name;
             this.Rank = rank;
             this.IsAlive = isAlive;
-            this.Weapons = weapons;
+            this.Weapons = wepons;
         }
 
         public int getscure()

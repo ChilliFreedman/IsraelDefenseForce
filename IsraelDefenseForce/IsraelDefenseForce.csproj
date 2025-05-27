@@ -50,14 +50,17 @@
     <Compile Include="Hermes460Drone.cs" />
     <Compile Include="IDF.cs" />
     <Compile Include="IntelligenceUnit.cs" />
+    <Compile Include="InteractiveMenu.cs" />
     <Compile Include="LestReport.cs" />
     <Compile Include="M109Artillery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QualityScore.cs" />
+    <Compile Include="SavdLogicDicshenaris.cs" />
     <Compile Include="StrikeUnit.cs" />
     <Compile Include="Terrorist.cs" />
     <Compile Include="TerroristReport.cs" />
+    <Compile Include="Valedize.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

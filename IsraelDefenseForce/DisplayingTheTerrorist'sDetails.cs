@@ -11,6 +11,16 @@ namespace IsraelDefenseForce
         public static void DisplayingTerrorist(Terrorist terrorist)
         {
             Console.WriteLine($"terrorist {terrorist.Name}");
+            string status;
+            if (terrorist.IsAlive)
+            {
+                status = "alive";
+            }
+            else
+            {
+                status = "is ded";
+            }
+            Console.WriteLine(status);
             Console.WriteLine($"rank: {terrorist.Rank}");
             Console.WriteLine($"scure: {terrorist.getscure()}");
             string ritewepons = "";

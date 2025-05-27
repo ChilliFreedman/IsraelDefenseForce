@@ -74,15 +74,17 @@ namespace IsraelDefenseForce
             //IDF.getlistofunitswithstrikleft();
             //Console.WriteLine(f16.StrikLeft);
             //קבלת הטרוריסט הכי מסוכן
-            Terrorist hiest =  QualityScore.voQualityScore();
+            //Terrorist  hiest =  QualityScore.voQualityScore();
             //Console.WriteLine(hiest.Name);
             //קבלת הטרוריסט עם הדרגה הכי גבוהה
-            Terrorist hiranke = QualityScore.gethiranke();
+            //Terrorist hiranke = QualityScore.gethiranke();
             //Console.WriteLine(hiranke.Name);
 
             //קריאה סופית לתקיפה 
-            Attack.attack(hiest,2);
-            Attack.attack(hiranke, 2);
+            //Attack.attack(hiest,2);
+            //Attack.attack(hiranke, 2);
+
+            InteractiveMenu.RunMenue();
 
             //string funn(Terrorist aaaa)
             //{

@@ -13,9 +13,19 @@ namespace IsraelDefenseForce
         public static string CurrentCommander = "Eyal Zamir";
 
         public static List<StrikeUnit> ListOfStrikUnits;
+
+        public static List<string> ListSolderNames = new List<string>() { "neria", "inon" };
+        private static string Code = "12345";
+        
+
         public static string GetDateOfEstablishment()
         {
             return DateOfEstablishment;
+        }
+
+        public  static string GetCode()
+        {
+            return Code;
         }
         public static void GetListOfUnitsWithStrikesLeft()
         {
