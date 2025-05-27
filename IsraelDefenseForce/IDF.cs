@@ -12,14 +12,14 @@ namespace IsraelDefenseForce
         
         public static string CurrentCommander = "Eyal Zamir";
 
-        public static List<StrikeUnit> ListOfStrikUnits;
+        public static List<StrikeUnit> ListOfStrikeUnits;
         public static string GetDateOfEstablishment()
         {
             return DateOfEstablishment;
         }
         public static void GetListOfUnitsWithStrikesLeft()
         {
-            foreach (StrikeUnit strike in ListOfStrikUnits)
+            foreach (StrikeUnit strike in ListOfStrikeUnits)
             {
                 if (strike.StrikesLeft > 0)
                 {

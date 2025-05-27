@@ -12,7 +12,7 @@ namespace IsraelDefenseForce
 
         public static string CurrentCommander = "Mohammed Sinwar";
 
-        public static List<Terrorist> ListOfTerrorist = new List<Terrorist>() { };
+        public static List<Terrorist> ListOfTerrorists = new List<Terrorist>() { };
 
         public static string GetDateOfEstablishment()
         {

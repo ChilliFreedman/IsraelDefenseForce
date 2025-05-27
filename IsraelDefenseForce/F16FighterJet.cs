@@ -11,8 +11,8 @@ namespace IsraelDefenseForce
         public string BombTypes;
        
 
-        public F16FighterJet( string unicName = "F16", int strikLeft = 8, int fuelSupply = 0, string typeOfTarget = "home", string bombTypes = " 0.5 ton or 1 ton")
-                : base(unicName, strikLeft, fuelSupply, typeOfTarget)
+        public F16FighterJet( string uniqueName = "F16", int strikesLeft = 8, int fuelSupply = 0, string typeOfTarget = "home", string bombTypes = " 0.5 ton or 1 ton")
+                : base(uniqueName, strikesLeft, fuelSupply, typeOfTarget)
 
         {
             this.BombTypes = bombTypes;

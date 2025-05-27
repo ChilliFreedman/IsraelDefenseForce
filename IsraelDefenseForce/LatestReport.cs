@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace IsraelDefenseForce
 {
-    internal static class LestReport
+    internal static class LatestReport
     {
-        public static TerroristReport getLestReourt(Terrorist terroristtokell)
+        public static TerroristReport GetLatestReport(Terrorist terroristToKill)
         {
-            TerroristReport lestrepurt = null;
+            TerroristReport latestReport = null;
             
             foreach (TerroristReport terrorist in IntelligenceUnit.ListReports)
             {
-                if (terrorist.TerroristInformition == terroristtokell)
+                if (terrorist.TerroristInformation == terroristToKill)
                 {
-                    if (lestrepurt == null)
+                    if (latestReport == null)
                     {
-                        lestrepurt = terrorist;
+                        latestReport = terrorist;
                     }
                     else
                     {
-                        if (terrorist.TimeStamp > lestrepurt.TimeStamp)
+                        if (terrorist.TimeStamp > latestReport.TimeStamp)
                         {
-                            lestrepurt = terrorist;
+                            latestReport = terrorist;
                         }
                     }
                 }
             }
-            return lestrepurt;
+            return latestReport;
         }
     }
 }

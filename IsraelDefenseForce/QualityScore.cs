@@ -10,33 +10,33 @@ namespace IsraelDefenseForce
     internal static class QualityScore
     {
         
-        public static Terrorist  voQualityScore()
+        public static Terrorist HighestQualityScore()
         {
             
-            Terrorist hii = Hamas.ListOfTerrorist[0];
-            foreach (Terrorist terrorist in Hamas.ListOfTerrorist)
+            Terrorist highest = Hamas.ListOfTerrorists[0];
+            foreach (Terrorist terrorist in Hamas.ListOfTerrorists)
             {
-                if (terrorist.getscure() > hii.getscure())
+                if (terrorist.GetScore() > highest.GetScore())
                 {
-                    hii = terrorist;
+                    highest = terrorist;
                 }
               
             }
-            return hii;
+            return highest;
         }
 
-        public static Terrorist gethiranke()
+        public static Terrorist HighestRanked()
         {
-            Terrorist hiiranke = Hamas.ListOfTerrorist[0];
-            foreach (Terrorist terrorist in Hamas.ListOfTerrorist)
+            Terrorist highestRank = Hamas.ListOfTerrorists[0];
+            foreach (Terrorist terrorist in Hamas.ListOfTerrorists)
             {
-                if (terrorist.Rank > hiiranke.Rank)
+                if (terrorist.Rank > highestRank.Rank)
                 {
-                    hiiranke = terrorist;
+                    highestRank = terrorist;
                 }
 
             }
-            return hiiranke;
+            return highestRank;
 
         }
     }

@@ -10,8 +10,8 @@ namespace IsraelDefenseForce
     {
         
 
-        public Hermes460Drone(string unicName = "Hermes460", int strikLeft = 3, int fuelSupply = 0, string typeOfTarget  = "people" + "car", string bombTypes = " personnel or armored vehicles")
-            : base(unicName, strikLeft, fuelSupply, typeOfTarget)
+        public Hermes460Drone(string uniqueName = "Hermes460", int strikesLeft = 3, int fuelSupply = 0, string typeOfTarget  = "people" + "car", string bombTypes = " personnel or armored vehicles")
+            : base(uniqueName, strikesLeft, fuelSupply, typeOfTarget)
 
         {
             

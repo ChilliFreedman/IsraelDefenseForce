@@ -17,7 +17,7 @@ namespace IsraelDefenseForce
         public Dictionary<string, int> Weapons;
 
 
-        public Terrorist(string name, int rank, bool isAlive, Dictionary<string, int> wepons)
+        public Terrorist(string name, int rank, bool isAlive, Dictionary<string, int> weapons)
         {
             this.Name = name;
             this.Rank = rank;
@@ -25,33 +25,28 @@ namespace IsraelDefenseForce
             this.Weapons = weapons;
         }
 
-        public int getscure()
+        public int GetScore()
         {
-            //int ak47 = 3;
-            //int m16 = 3;
-            //int gun = 2;
-            //int knife = 1;
-            //return ak47 + m16;
-            //Dictionary<int,int> result = new Dictionary<int,int>();
-            int numWepon = 0;
+            
+            int weaponScore = 0;
             if (Weapons.Keys.Contains("ak47"))
             {
-                numWepon += Weapons["ak47"] * 3;
+                weaponScore += Weapons["ak47"] * 3;
             }
             if (Weapons.Keys.Contains("m16"))
             {
-                numWepon += Weapons["m16"] * 3;
+                weaponScore += Weapons["m16"] * 3;
             }
             if (Weapons.Keys.Contains("gun"))
             {
-                numWepon += Weapons["gun"] * 2;
+                weaponScore += Weapons["gun"] * 2;
             }
             if (Weapons.Keys.Contains("knife"))
             {
-                numWepon += Weapons["knife"] * 1;
+                weaponScore += Weapons["knife"] * 1;
             }
-            numWepon *= Rank;
-            return numWepon;
+            weaponScore *= Rank;
+            return weaponScore;
 
 
         }

@@ -12,7 +12,7 @@ namespace IsraelDefenseForce
     {
         public static List<TerroristReport> ListReports;
         //פונקציה שמחזירה את המחבל עם הכי הרבה דיווחים
-        public static Terrorist GetTheterWithMostReports()
+        public static Terrorist GetTheTerroristWithMostReports()
         {
             Dictionary<Terrorist,int> counts = new Dictionary<Terrorist,int>();
 
