@@ -50,7 +50,7 @@
     <Compile Include="Hermes460Drone.cs" />
     <Compile Include="IDF.cs" />
     <Compile Include="IntelligenceUnit.cs" />
-    <Compile Include="LestReport.cs" />
+    <Compile Include="LatestReport.cs" />
     <Compile Include="M109Artillery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

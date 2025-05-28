@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace IsraelDefenseForce
 {
-    internal static class  DisplayingTheTerrorist_sDetails
+    internal static class  DisplayingTheTerroristDetails
     {
         public static void DisplayingTerrorist(Terrorist terrorist)
         {
             Console.WriteLine($"terrorist {terrorist.Name}");
             Console.WriteLine($"rank: {terrorist.Rank}");
-            Console.WriteLine($"scure: {terrorist.getscure()}");
-            string ritewepons = "";
+            Console.WriteLine($"score: {terrorist.GetScore()}");
+            string writeweapons = "";
             foreach (string a in terrorist.Weapons.Keys)
             {
-                ritewepons += $"{terrorist.Weapons[a]} {a} ";
+                writeweapons += $"{terrorist.Weapons[a]} {a} ";
             }
-            Console.WriteLine($"wepons: {ritewepons}");
+            Console.WriteLine($"weapons: {writeweapons}");
 
 
 
