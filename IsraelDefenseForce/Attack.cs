@@ -8,22 +8,22 @@ namespace IsraelDefenseForce
 {
     internal static class Attack
     {
-        public static void attack(Terrorist terrorist,int num)
+        public static void ToAttack(Terrorist terrorist,int num)
         {
-            TerroristReport lestreport = LestReport.getLestReourt(terrorist);
-            foreach (StrikeUnit strike in IDF.ListOfStrikUnits)
+            TerroristReport latestReport = LatestReport.GetLatestReport(terrorist);
+            foreach (StrikeUnit strike in IDF.ListOfStrikeUnits)
             {
 
-                if (strike.StrikLeft >= num && strike.TypeOfTarget == lestreport.LastKnownLocation)
+                if (strike.StrikesLeft >= num && strike.TypeOfTarget == latestReport.LastKnownLocation)
                 {
                     
-                    Console.WriteLine($"tame of atack: {DateTime.Now}");
-                    DisplayingTheTerrorist_sDetails.DisplayingTerrorist(terrorist);
+                    Console.WriteLine($"Time of attack: {DateTime.Now}");
+                    DisplayingTheTerroristDetails.DisplayingTerrorist(terrorist);
                     //Console.WriteLine($"{lestreport.TimeStamp}");
-                    Console.WriteLine($"lest intelgens report of {terrorist.Name}: locition: {lestreport.LastKnownLocation}, timstamp:{lestreport.TimeStamp} ");
+                    Console.WriteLine($"Latest inteligence report of {terrorist.Name}: location: {latestReport.LastKnownLocation}, timstamp:{latestReport.TimeStamp} ");
                     
-                    Console.WriteLine($"usd {strike.UnicName} with {num} bombs, and {strike.StrikLeft - num} are left aftur the atack");
-                    strike.StrikLeft -= num;
+                    Console.WriteLine($"used {strike.UniqueName} with {num} bombs, and {strike.StrikesLeft - num} are left after the attack");
+                    strike.StrikesLeft -= num;
                     terrorist.IsAlive = false;
 
                 }

@@ -13,12 +13,12 @@ namespace IsraelDefenseForce
             Console.WriteLine($"terrorist {terrorist.Name}");
             Console.WriteLine($"rank: {terrorist.Rank}");
             Console.WriteLine($"score: {terrorist.GetScore()}");
-            string writeweapons = "";
+            string writeWeapons = "";
             foreach (string a in terrorist.Weapons.Keys)
             {
-                writeweapons += $"{terrorist.Weapons[a]} {a} ";
+                writeWeapons += $"{terrorist.Weapons[a]} {a} ";
             }
-            Console.WriteLine($"weapons: {writeweapons}");
+            Console.WriteLine($"weapons: {writeWeapons}");
 
 
 

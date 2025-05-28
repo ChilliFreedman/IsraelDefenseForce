@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attack.cs" />
-    <Compile Include="DisplayingTheTerrorist%27sDetails.cs" />
+    <Compile Include="DisplayingTheTerroristDetails.cs" />
     <Compile Include="F16FighterJet.cs" />
     <Compile Include="Hamas.cs" />
     <Compile Include="Hermes460Drone.cs" />
