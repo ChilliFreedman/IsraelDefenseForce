@@ -26,7 +26,7 @@ namespace IsraelDefenseForce
                     return;
                 }
 
-                if (strike.StrikesLeft <= num || strike.TypeOfTarget != lestreport.LastKnownLocation)
+                if (strike.StrikesLeft <= num || !strike.TypeOfTarget.Contains( lestreport.LastKnownLocation) || (strike.GetType() == typeof(M109Artillery) && num > 3))
                 {
                     continue;
                 }

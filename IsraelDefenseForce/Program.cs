@@ -33,15 +33,17 @@ namespace IsraelDefenseForce
             Dictionary<string, int> dicYousef = new Dictionary<string, int>() { { "ak47", 2 }, { "m16", 1 } };
             Terrorist Yousef = new Terrorist("Yousef", 3, true, dicYousef);
             Hamas.ListOfTerrorist.Add(Yousef);
+
+
+
+
             //יצירת מופעים לכלי תקיפה כולל הכנסה לרשימה של האב 
             F16FighterJet f16 = new F16FighterJet();
             M109Artillery m109 = new M109Artillery();
             Hermes460Drone zic = new Hermes460Drone();
             IDF.ListOfStrikUnits  = new List<StrikeUnit> { f16, m109, zic };
 
-            //Console.WriteLine(IDF.ListOfStrikUnits.Count);
-            //Console.WriteLine(Hamas.ListOfTerrorist.Count);
-            //Console.WriteLine(Hamas.CurrentCommander);
+            
 
             //יצירת דיווחים של אמן
             DateTime date1 = new DateTime(2025, 01, 4);
@@ -62,8 +64,8 @@ namespace IsraelDefenseForce
             TerroristReport report6 = new TerroristReport(Mohammed, "home", date5);
             TerroristReport report7 = new TerroristReport(Ahmed, "car", date6);
             TerroristReport report8 = new TerroristReport(Mohammed, "home", date7);
-            TerroristReport report9 = new TerroristReport(Omar, "home", date8);
-            TerroristReport report10 = new TerroristReport(Ahmed, "outsaide", date10);
+            TerroristReport report9 = new TerroristReport(Omar, "outside", date8);
+            TerroristReport report10 = new TerroristReport(Ahmed, "car", date10);
             //הכנסה לרשימה של אמן
             IntelligenceUnit.ListReports = new List<TerroristReport>()
             { report1,report2,report3,report4,report5,report6,report7,report8,report9,report10};
