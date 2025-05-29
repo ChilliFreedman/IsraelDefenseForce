@@ -27,12 +27,7 @@ namespace IsraelDefenseForce
 
         public int getscure()
         {
-            //int ak47 = 3;
-            //int m16 = 3;
-            //int gun = 2;
-            //int knife = 1;
-            //return ak47 + m16;
-            //Dictionary<int,int> result = new Dictionary<int,int>();
+            
             int numWepon = 0;
             if (Weapons.Keys.Contains("ak47"))
             {

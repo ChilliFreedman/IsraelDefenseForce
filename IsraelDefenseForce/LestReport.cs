@@ -12,19 +12,19 @@ namespace IsraelDefenseForce
         {
             TerroristReport lestrepurt = null;
             
-            foreach (TerroristReport terrorist in IntelligenceUnit.ListReports)
+            foreach (TerroristReport terroristrep in IntelligenceUnit.ListReports)
             {
-                if (terrorist.TerroristInformation == terroristtokell)
+                if (terroristrep.TerroristInformation == terroristtokell)
                 {
                     if (lestrepurt == null)
                     {
-                        lestrepurt = terrorist;
+                        lestrepurt = terroristrep;
                     }
                     else
                     {
-                        if (terrorist.TimeStamp > lestrepurt.TimeStamp)
+                        if (terroristrep.TimeStamp > lestrepurt.TimeStamp)
                         {
-                            lestrepurt = terrorist;
+                            lestrepurt = terroristrep;
                         }
                     }
                 }

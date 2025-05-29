@@ -14,7 +14,7 @@ namespace IsraelDefenseForce
 
         public static List<StrikeUnit> ListOfStrikUnits;
 
-        public static List<string> ListSolderNames = new List<string>() { "neria", "inon" };
+        public static List<string> ListSolderNames = new List<string>() { "Neriya", "Inon" };
         private static string Code = "12345";
         
 

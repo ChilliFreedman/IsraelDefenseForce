@@ -24,20 +24,20 @@ namespace IsraelDefenseForce
             }
             while (!Valedize.IsValid(soldername, code));
 
-            string chuse;
+            string choose;
             do
             {
-                Console.WriteLine("press 1 to see the terrorist with the most reports. ");
-                Console.WriteLine("press 2 to see the terrorist with the highest rank. ");
-                Console.WriteLine("press 3 to see the terrorist with the hiest score. ");
-                Console.WriteLine("press 4 to see all terorist names. ");
-                Console.WriteLine("press 5 to see ditelse of a spesific terrorist. ");
-                Console.WriteLine("press 6 to see all avilbol units for attak. ");
-                Console.WriteLine("press 7 to attak a spsific terrorist");
-                Console.WriteLine("press 8 to exit. ");
+                Console.WriteLine("\nA:press 1 to see the terrorist with the most reports. ");
+                Console.WriteLine("B:press 2 to see the terrorist with the highest rank. ");
+                Console.WriteLine("C:press 3 to see the terrorist with the hiest score. ");
+                Console.WriteLine("D:press 4 to see all terorist names. ");
+                Console.WriteLine("E:press 5 to see ditelse of a spesific terrorist. ");
+                Console.WriteLine("F:press 6 to see all avilbol units for attak. ");
+                Console.WriteLine("G:press 7 to attak a spsific terrorist");
+                Console.WriteLine("H:press 8 to exit. ");
 
-                chuse = Console.ReadLine();
-                switch (chuse)
+                choose = Console.ReadLine();
+                switch (choose)
                 {
                     case "1":
                         Console.WriteLine(IntelligenceUnit.GetTheterWithMostReports().Name);
@@ -93,14 +93,14 @@ namespace IsraelDefenseForce
 
                         break;
                     case "8":
-                        Console.WriteLine("by take ker");
+                        Console.WriteLine("bye bye");
                         break;
                     default:
                         Console.WriteLine("not valid chuse");
                         break;
                 }
             }
-            while (chuse != "8");
+            while (choose != "8");
 
 
 

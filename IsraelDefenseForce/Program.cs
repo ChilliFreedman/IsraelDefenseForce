@@ -13,10 +13,7 @@ namespace IsraelDefenseForce
     {
         static void Main(string[] args)
         {
-            //Mohammed,Ahmed,Ali,Omar,Yousef,Amina,Fatima,Noor,Salim,Layla
-            //knife,gun,m16,ak47
-            //List<string> TerorisNames = new List<string>() { "Mohammed", "Ahmed", "Ali", "Omar", "Yousef", "Amina", "Fatima", "Noor", "Salim", "Layla" };
-
+            //יצירת מחבלים כולל הכנסה לליסט של חמאס
             Dictionary<string, int> dicMohammed = new Dictionary<string, int>() { { "gun", 2 }, { "knife", 2 } };
             Terrorist Mohammed = new Terrorist("Mohammed", 3, true, dicMohammed);
             Hamas.ListOfTerrorist.Add(Mohammed);
@@ -36,7 +33,7 @@ namespace IsraelDefenseForce
             Dictionary<string, int> dicYousef = new Dictionary<string, int>() { { "ak47", 2 }, { "m16", 1 } };
             Terrorist Yousef = new Terrorist("Yousef", 3, true, dicYousef);
             Hamas.ListOfTerrorist.Add(Yousef);
-
+            //יצירת מופעים לכלי תקיפה כולל הכנסה לרשימה של האב 
             F16FighterJet f16 = new F16FighterJet();
             M109Artillery m109 = new M109Artillery();
             Hermes460Drone zic = new Hermes460Drone();
@@ -47,105 +44,34 @@ namespace IsraelDefenseForce
             //Console.WriteLine(Hamas.CurrentCommander);
 
             //יצירת דיווחים של אמן
-            TerroristReport report1 = new TerroristReport(Mohammed, "home", DateTime.Now);
-            TerroristReport report2 = new TerroristReport(Yousef, "outside", DateTime.Now);
-            TerroristReport report3 = new TerroristReport(Ali, "car", DateTime.Now);
-            TerroristReport report4 = new TerroristReport(Mohammed, "home", DateTime.Now);
-            TerroristReport report5 = new TerroristReport(Ali, "home", DateTime.Now);
-            TerroristReport report6 = new TerroristReport(Mohammed, "home", DateTime.Now);
-            TerroristReport report7 = new TerroristReport(Ahmed, "car", DateTime.Now);
-            TerroristReport report8 = new TerroristReport(Mohammed, "home", DateTime.Now);
-            TerroristReport report9 = new TerroristReport(Omar, "home", DateTime.Now);
-            TerroristReport report10 = new TerroristReport(Ahmed, "outsaide", DateTime.Now);
+            DateTime date1 = new DateTime(2025, 01, 4);
+            DateTime date2 = new DateTime(2025, 01, 25);
+            DateTime date3 = new DateTime(2025, 02, 10);
+            DateTime date4 = new DateTime(2025, 02, 17);
+            DateTime date5 = new DateTime(2025, 02, 28);
+            DateTime date6 = new DateTime(2025, 03, 6);
+            DateTime date7 = new DateTime(2025, 03, 10);
+            DateTime date8 = new DateTime(2025, 03, 15);
+            DateTime date9 = new DateTime(2025, 04, 14);
+            DateTime date10 = new DateTime(2025, 04, 28);
+            TerroristReport report1 = new TerroristReport(Mohammed, "home", date1);
+            TerroristReport report2 = new TerroristReport(Yousef, "outside",date2 );
+            TerroristReport report3 = new TerroristReport(Ali, "car", date2);
+            TerroristReport report4 = new TerroristReport(Mohammed, "home", date3);
+            TerroristReport report5 = new TerroristReport(Ali, "home", date4);
+            TerroristReport report6 = new TerroristReport(Mohammed, "home", date5);
+            TerroristReport report7 = new TerroristReport(Ahmed, "car", date6);
+            TerroristReport report8 = new TerroristReport(Mohammed, "home", date7);
+            TerroristReport report9 = new TerroristReport(Omar, "home", date8);
+            TerroristReport report10 = new TerroristReport(Ahmed, "outsaide", date10);
             //הכנסה לרשימה של אמן
             IntelligenceUnit.ListReports = new List<TerroristReport>()
             { report1,report2,report3,report4,report5,report6,report7,report8,report9,report10};
 
-            //foreach (TerroristReport report in IntelligenceUnit.ListReports)
-            //{
-            //    Console.WriteLine(report.TerroristInformition.Name);
-            //}
-
-
-            //קורא לפונקציה שבודקת איזה מחבל יש הכי הרבה פעמים
-            //Console.WriteLine( IntelligenceUnit.GetTheterWithMostReports().Name);
-            //קורא לפונקציה של
-            //הצגת כלי תקיפה זמינים ואת שארית התחמושת שלהם
-            //IDF.getlistofunitswithstrikleft();
-            //Console.WriteLine(f16.StrikLeft);
-            //קבלת הטרוריסט הכי מסוכן
-            //Terrorist  hiest =  QualityScore.voQualityScore();
-            //Console.WriteLine(hiest.Name);
-            //קבלת הטרוריסט עם הדרגה הכי גבוהה
-            //Terrorist hiranke = QualityScore.gethiranke();
-            //Console.WriteLine(hiranke.Name);
-
-            //קריאה סופית לתקיפה 
-            //Attack.attack(hiest,2);
-            //Attack.attack(hiranke, 2);
-
-            InteractiveMenu.RunMenue();
-
-            //string funn(Terrorist aaaa)
-            //{
-            //    string ritewepons = "";
-            //    foreach (string a in aaaa.Weapons.Keys)
-            //    {
-
-            //        ritewepons += $"{aaaa.Weapons[a]} {a} ";
-            //    }
-            //    return ritewepons;
-
-
-            //}
-
-            //TerroristReport tokill = null;
-            ////TerroristReport tokill = IntelligenceUnit.ListReports[0];
-            //foreach(TerroristReport terrorist in IntelligenceUnit.ListReports)
-            //{
-            //    if (terrorist.TerroristInformition == hiest)
-            //    {
-            //        if (tokill == null)
-            //        {
-            //            tokill = terrorist;
-            //        }
-            //        else
-            //        {
-            //            if (terrorist.TimeStamp > tokill.TimeStamp)
-            //            {
-            //                tokill = terrorist;
-            //            }
-            //        }
-            //    }
-            //}
-            //Console.WriteLine(tokill.TerroristInformition.Name +  " " + tokill.LastKnownLocation + " " + tokill.TimeStamp);
-
-
-
-            //Console.WriteLine(Mohammed.getscure());
-            //Console.WriteLine(QualityScore.voQualityScore().Name);
-            //Console.WriteLine(QualityScore.voQualityScore().Rank);
-            //Console.WriteLine(QualityScore.voQualityScore().getscure());
-
-
-            //Console.WriteLine(funn(QualityScore.voQualityScore()));
-            //foreach(TerroristReport a in IntelligenceUnit.ListReports)
-            //{
-            //    if (a.TerroristInformition == QualityScore.voQualityScore())
-            //    {
-            //        Console.WriteLine(a.LastKnownLocation);
-            //    }
-            //}
-
-            //Console.WriteLine(Mohammed.Weapons.Keys);
-
-            //foreach(StrikeUnit s in IDF.ListOfStrikUnits)
-            //{
-            //    Console.WriteLine(s.UnicName);
-            //    //Console.WriteLine(s);
-            //}
-            //Console.WriteLine(f16.UnicName);
-            //IDF.GetDateOfEstablishment();
+            //קריאה סופית לתפריט
+             InteractiveMenu.RunMenue();
+            
+            
         }
     }
 }
